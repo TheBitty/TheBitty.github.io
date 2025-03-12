@@ -160,6 +160,34 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+        .tech-tags {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .tech-tags .skill {
+            font-size: 0.8rem;
+            padding: 3px 10px;
+        }
+        
+        .project-card {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .project-card a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -255,21 +283,65 @@
             
             <div class="projects-container">
                 <div class="project-card">
-                    <h3 class="project-title">Project Name 1</h3>
-                    <p>Brief description of the project, technologies used, and key outcomes.</p>
-                    <p><a href="#">View Project</a></p>
+                    <h3 class="project-title">GopherStrike</h3>
+                    <p>A developing red team framework written in Go, featuring a port scanner with plans to add OSINT tools, multiple vulnerability scanners, and subdomain enumeration for comprehensive offensive security operations.</p>
+                    <p><a href="https://github.com/TheBitty/GopherStrike" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">Go</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Cybersecurity</span>
+                    </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3 class="project-title">Project Name 2</h3>
-                    <p>Brief description of the project, technologies used, and key outcomes.</p>
-                    <p><a href="#">View Project</a></p>
+                    <h3 class="project-title">Pythmap</h3>
+                    <p>A comprehensive network scanning and analysis tool built in Python that combines nmap, banner grabbing, and logging capabilities for network reconnaissance and security assessment.</p>
+                    <p><a href="https://github.com/TheBitty/Pythmap" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">Python</span>
+                        <span class="skill">Nmap</span>
+                        <span class="skill">Network Security</span>
+                    </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3 class="project-title">Project Name 3</h3>
-                    <p>Brief description of the project, technologies used, and key outcomes.</p>
-                    <p><a href="#">View Project</a></p>
+                    <h3 class="project-title">BinaryRipper</h3>
+                    <p>A specialized tool for binary analysis and reverse engineering, focused on extracting and examining components from executable files for security research.</p>
+                    <p><a href="https://github.com/TheBitty/BinaryRipper" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">C++</span>
+                        <span class="skill">Reverse Engineering</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">BitStrike</h3>
+                    <p>Post-exploitation framework designed to complement GopherStrike, providing advanced tools for security professionals during offensive operations.</p>
+                    <p><a href="https://github.com/TheBitty/BitStrike" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">Red Team</span>
+                        <span class="skill">Security</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">RustCC</h3>
+                    <p>A project exploring Rust programming language capabilities, likely for systems programming or security applications.</p>
+                    <p><a href="https://github.com/TheBitty/RustCC" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">Rust</span>
+                        <span class="skill">Systems Programming</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">KairosAlgo</h3>
+                    <p>A collection of algorithms and data structures implementations, likely for educational or performance analysis purposes.</p>
+                    <p><a href="https://github.com/TheBitty/KairosAlgo" target="_blank">View Project</a></p>
+                    <div class="tech-tags">
+                        <span class="skill">Algorithms</span>
+                        <span class="skill">Data Structures</span>
+                    </div>
                 </div>
             </div>
         </section>
